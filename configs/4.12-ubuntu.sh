@@ -16,7 +16,7 @@ from="ubuntu"
 
 # This is the argument of 'docker pull', 'docker push', etc. for the image
 # we are building.
-docker_url="returntocorp/ocaml:ubuntu"
+docker_url="returntocorp/ocaml:4.12-ubuntu"
 extra_docker_urls=("$docker_url-$date")
 
 # User to create and use. If it already exists, we'll try to use it.
@@ -27,7 +27,8 @@ extra_packages="$extra_deb_packages"
 
 # Opam switch to use. This determines the OCaml version and a set of
 # configuration options.
-opam_switch="4.10.0+flambda"
+opam_switch="4.12.0+flambda"
+opam_switch_options="--package=ocaml-variants.4.12.0+options,ocaml-option-flambda"
 
 # The collection of opam packages we want to install. Go wild.
 opam_packages="$opam_packages"

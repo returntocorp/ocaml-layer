@@ -8,8 +8,10 @@ ifndef SELECTED_CONFIGS
   # The list of configuration files, one per image that you want to build
   # when running 'make' and 'make push'.
   SELECTED_CONFIGS = \
-    configs/alpine.sh \
-    configs/ubuntu.sh
+    configs/4.10-alpine.sh \
+    configs/4.10-ubuntu.sh \
+    configs/4.12-alpine.sh \
+    configs/4.12-ubuntu.sh
 endif
 export SELECTED_CONFIGS
 

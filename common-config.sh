@@ -35,7 +35,7 @@ opam_packages="
   easy_logging.0.8.1
   easy_logging_yojson.0.8.1
   grain_dypgen
-  lsp.1.1.0
+  lsp.1.3.0
   menhir
   num
   ocamlfind
